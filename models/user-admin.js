@@ -15,4 +15,4 @@ var userSchema = new Schema({
     }, {_id: false})]
 }, {_id: false});
 
-module.exports = mongoose.model('UserAdmin', userSchema);
+module.exports = mongoose.model('User', userSchema);

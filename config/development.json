@@ -3,7 +3,7 @@
     "accessSecret": "my access secret key"
   },
   "mongodb": {
-    "connection": "mongodb://localhost/tmp-base"
+    "connection": "mongodb://localhost/admindb"
   },
   "nsqd": {
     "address": "192.168.99.100",
