@@ -37,7 +37,7 @@ PORT | 8080 | Container port.
 | role | User role  |
 | created | Date of user created |
 | used | Used storage space  |
-| memberships | List of [Memberships](#user-dto) |
+| memberships | List of [Memberships](#membership-dto) |
 
 ### Membership Dto
 | Param   | Description |
