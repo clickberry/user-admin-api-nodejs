@@ -1,5 +1,5 @@
 var JwtStrategy = require('passport-jwt').Strategy;
-
+var error = require('clickberry-http-errors');
 var config = require('clickberry-config');
 
 module.exports = function (passport) {
