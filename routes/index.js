@@ -29,6 +29,7 @@ module.exports = function (passport) {
                 provider: {allow: true, rename: 'memberships.provider'},
                 email: {allow: true, rename: 'memberships.email'},
                 name: {allow: true, rename: 'memberships.name'},
+                profile_name: {allow: true, rename: 'profile.name'},
                 created: {allow: true}
             },
             orderBy: {
@@ -63,6 +64,7 @@ function userMap(user) {
         role: user.role,
         used: user.storageUsed,
         created: user.created,
+        profile: user.profile ? profileMapper(user.profile) : null,
         memberships: user.memberships.map(membershipMap)
     };
 }
@@ -74,5 +76,12 @@ function membershipMap(membership) {
         token: membership.token,
         email: membership.email,
         name: membership.name
+    };
+}
+
+function profileMapper(profile) {
+    return {
+        name: profile.name,
+        avatarUrl: profile.avatarUrl
     };
 }
