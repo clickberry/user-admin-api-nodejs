@@ -70,7 +70,7 @@ Gets users.
 
 | Param    | Description | Allowed Values| Example | 
 |----------|-------------|---------------|---------|
-| $filter    |  Filtering | **fields:** name, created, used, provider, email | $filter=created ge '2016-01-26T15:42:19Z' and (provider eq 'vkontakte' or provider eq 'facebook') |
+| $filter    |  Filtering | **fields:** name, profile_name, created, used, provider, email | $filter=created ge '2016-01-26T15:42:19Z' and (provider eq 'vkontakte' or provider eq 'facebook') |
 | $orderby    |  Sorting | **fields:** created, used, provider, email | $orderby=provider desc,created asc|
 | $top    | Quantity return entities. | 0 < $top <= 100 | $top=30 |
 | $skip    | Quantity skip entities. | 0 < $skip <= 100 | $skip=60 |
